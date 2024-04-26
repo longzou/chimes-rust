@@ -1,0 +1,9 @@
+database:
+    url: mysql://chimes:ks123456@localhost:3306/chimesrust
+webserver:
+    port: 10999
+    rsa_password_private_key: MIIBVAIBADANBgkqhkiG9w0BAQEFAASCAT4wggE6AgEAAkEAoX7UzJgx7+N2XQ5/QWBHNSEe/l6EnWcC7PI03o3oal3nlBRJfRW6RGkw9rcg/2h08X4j2kAKFUkl9l5jff23XwIDAQABAkB+h1OMtNWzQMDU6e3UN+2yd6/D1iQK+tF0+dNoZ0CoTIntMvvhrzaYRXPc5CXjUmZ7BthNDpkiHGsSOp3OKthxAiEAzCdplSfyrLhyKSl+Y+M5HCd6WYSd1o99S7lO9Rt1A9cCIQDKghNnRoS3U60kVocBTpQtpp1kiYpCUQ4SS1nOtuN3uQIgPn3t/t9clGxdXaY67x6V071t4UsL+aqwouZVegfumL8CIQCp9IUIVdyoZ2eWabAgXqxpq73IVM5eXdxraiXTIRbCsQIgbP7KXXuloNG5/O8FeKTN+ThcZrkPqka98KiBTx+Jmgo=
+    rsa_password_public_key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKF+1MyYMe/jdl0Of0FgRzUhHv5ehJ1nAuzyNN6N6Gpd55QUSX0VukRpMPa3IP9odPF+I9pAChVJJfZeY339t18CAwEAAQ==
+    upload-store-path: D:/temp/files
+    upload-temp-path: D:/temp/tmp
+    access-url-prefix: http://localhost:10999/api/v1/file/

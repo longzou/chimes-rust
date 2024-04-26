@@ -1,0 +1,44 @@
+
+[package]
+authors = ["Long(long.zou@gmail.com)"]
+edition = "2021"
+name = "chimes-rust"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-utils = "3.0.0"
+actix-web = "4.0.1"
+base64 = "0.21.0"
+futures = "0.3.30"
+rsa = "0.6.1"
+regex = "1.10.0"
+percent-encoding = "2.1.0"
+serde = "1.0.136"
+serde_derive = "1.0.136"
+serde_json = "1.0.79"
+yaml-rust = "0.4.5"
+rbson = "2.0"
+log = "0.4"
+rand = "0.8.5"
+chrono = "0.4.19"
+chimes-utils = { path = "../chimes-utils", version = "0.1.0"}
+rbatis = {version = "3.1.16"}
+chimes-auth = {version = "0.1.0", features = ["session"]}
+captcha = "0.0.9"
+jsonwebtoken = "8.1.1"
+async-recursion = "1.0.0"
+awmp = "0.8.1"
+fast_log =  { version = "1.3", optional = true } 
+tokio = {version = "1.10", features = ["full", "rt-multi-thread"], optional = true }
+actix-cors = { version = "0.6.1", optional = true } 
+
+
+[features]
+main = ["fast_log", "tokio", "actix-cors"]
+
+
+[[bin]]
+name = "chimes-rust"
+required-features = ["main"]
